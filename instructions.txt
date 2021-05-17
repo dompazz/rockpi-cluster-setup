@@ -18,7 +18,7 @@ armbian-config -> set hostname
 
 #Finally run to setup Verus as a service and kick it off.  Once sure it is running, 
 #reboot and check again that service is kicked off at boot
-vi 
+
 ./last.sh
 
 
