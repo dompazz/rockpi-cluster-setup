@@ -16,13 +16,14 @@ armbian-config -> set hostname
 #Setup Mining:
 ./setup_miner.sh
 
+#Finally run to setup Verus as a service and kick it off.  Once sure it is running, 
+#reboot and check again that service is kicked off at boot
+vi 
 ./last.sh
 
 
 utils:
 armbianmonitor -M
 
-
-Install from Rock64.img
 
 
