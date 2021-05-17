@@ -1,0 +1,12 @@
+[Unit]
+Description=Verus Mining Service
+
+[Service]
+User=root
+WorkingDirectory=/tmp
+EnvironmentFile=/etc/environment
+ExecStart=/mining/ccminer/run
+
+[Install]
+WantedBy=multi-user.target
+

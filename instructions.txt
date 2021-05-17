@@ -1,0 +1,28 @@
+Flash 
+### UPDATE environment.vals, mac.sh with appropriate values
+
+
+./first.sh
+
+armbian-config -> set hostname
+		-> set avalability
+		-> set speed 1.51GHz
+    
+#This will cause a disconnect.  Wait until only red light blinks and then reboot RockPi
+./mac.sh
+
+
+
+#Setup Mining:
+./setup_miner.sh
+
+./last.sh
+
+
+utils:
+armbianmonitor -M
+
+
+Install from Rock64.img
+
+

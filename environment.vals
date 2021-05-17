@@ -1,0 +1,5 @@
+PoolWorker=Rock64-Cluster-01
+PoolHost=na.luckpool.net
+Port=3956
+PublicVerusCoinAddress=RE7Z4aGifd6eGJXeArE9ugTazNgXJsVXyW
+VerusThreads=4
