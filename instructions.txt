@@ -1,6 +1,12 @@
-Flash 
-### UPDATE environment.vals, mac.sh with appropriate values
+### Flash 
+### Look up IP once booted.  Login and create user.  
 
+### All commands executed with root priviledges 
+
+git clone https://github.com/dompazz/rockpi-cluster-setup.git
+cd rockpi-cluster-setup
+
+### UPDATE environment.vals, mac.sh with appropriate values
 
 ./first.sh
 
@@ -19,6 +25,7 @@ armbian-config -> set hostname
 #Finally run to setup Verus as a service and kick it off.  Once sure it is running, 
 #reboot and check again that service is kicked off at boot
 
+chmod 700 last.sh
 ./last.sh
 
 
