@@ -1,29 +1,38 @@
-Flash 
+### Flash 
+### Look up IP once booted.  Login and create user.  
+
+### All commands executed with root priviledges 
+
+git clone https://github.com/dompazz/rockpi-cluster-setup.git
+cd rockpi-cluster-setup
+
 ### UPDATE environment.vals, mac.sh with appropriate values
 
-
 ./first.sh
+
+#Setup Mining:
+./setup_miner.sh
 
 armbian-config -> set hostname
 		-> set avalability
 		-> set speed 1.51GHz
     
+#DO THIS ONLY IF YOU ARE USING AN OLD ARMBIAN VERSION WITH STATIC MAC ADDRESS
 #This will cause a disconnect.  Wait until only red light blinks and then reboot RockPi
 ./mac.sh
 
 
+#Finally run to setup Verus as a service and kick it off.  
 
-#Setup Mining:
-./setup_miner.sh
-
-#Finally run to setup Verus as a service and kick it off.  Once sure it is running, 
-#reboot and check again that service is kicked off at boot
-
+chmod 700 last.sh
 ./last.sh
 
+#Once sure it is running, reboot and check again that service is kicked off at boot
+`reboot` or `shutdown now` (followed by power button to turn it back on)
 
 utils:
-armbianmonitor -M
+armbianmonitor -M #current CPU % and temperature.
 
+journalctl -f -u verus #follows the miner log
 
 
