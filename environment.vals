@@ -1,5 +1,5 @@
 PoolWorker=Rock64-Cluster-01
-PoolHost=pool.verus.io
+PoolHost=23.124.56.132
 Port=9999
 PublicVerusCoinAddress=RNBV5hhpoPceg4JiKTWKbkeQzPDPKUZDM6
 VerusThreads=4
