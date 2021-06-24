@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#apt update
+apt update
 
 cat environment.vals >> /etc/environment
 
