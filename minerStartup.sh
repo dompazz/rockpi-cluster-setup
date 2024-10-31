@@ -19,4 +19,4 @@ export PoolHost=verus.aninterestinghole.xyz
 export Port=9999
 export PublicVerusCoinAddress=RNBV5hhpoPceg4JiKTWKbkeQzPDPKUZDM6
 
-./ccminer -a verus -o stratum+tcp://${PoolHost}:${Port} -u ${PublicVerusCoinAddress}.$(hostname) -t ${VerusThreads} -N 20
+tmux new-session -d -s "Verus" ./ccminer -a verus -o stratum+tcp://${PoolHost}:${Port} -u ${PublicVerusCoinAddress}.$(hostname) -t ${VerusThreads} -N 20
