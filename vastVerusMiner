@@ -1,0 +1,1 @@
+./vast create instance 13412744 --price 0.35 --image nvidia/cuda:12.0.1-devel-ubuntu22.04   --env '-p 22:22' --onstart-cmd 'wget https://raw.githubusercontent.com/dompazz/rockpi-cluster-setup/refs/heads/master/minerStartup.sh; chmod 777 minerStartup.sh; ./minerStartup.sh'  --ssh  --direct --disk 8 
