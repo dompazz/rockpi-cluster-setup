@@ -1,5 +1,6 @@
 #!/bin/bash
-
+apt update
+apt upgrade -y
 apt install -y libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential
 
 wget -qO- https://apt.llvm.org/llvm.sh | bash -s -- 18
