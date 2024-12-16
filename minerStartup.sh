@@ -20,8 +20,8 @@ ln -s /usr/bin/clang-cpp-18 /usr/bin/clang-cpp
 ./build.sh
 
 export VerusThreads=$(nproc)
-export PoolHost=verus.aninterestinghole.xyz
-export Port=9999
+export PoolHost=usse.vipor.net
+export Port=5040
 export PublicVerusCoinAddress=RNBV5hhpoPceg4JiKTWKbkeQzPDPKUZDM6
 
 tmux new-session -d -s "Verus" ./ccminer -a verus -o stratum+tcp://${PoolHost}:${Port} -u ${PublicVerusCoinAddress}.$(hostname) -t ${VerusThreads} -N 100
