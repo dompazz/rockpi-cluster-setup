@@ -3,6 +3,7 @@
 apt update
 apt upgrade -y
 apt install -y libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential
+apt install -y wget lsb-release wget software-properties-common gnupg
 
 wget -qO- https://apt.llvm.org/llvm.sh | bash -s -- 18
 
